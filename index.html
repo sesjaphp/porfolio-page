@@ -16,7 +16,22 @@
         </div>
     </header>
 
-    <section>
+    <section class="about-me">
+        <div class="container">
+            <div class="header-wrapper">
+                <h1 class="reveal">
+                    About me
+                </h1>
+            </div>
+            <div class="text-wrapper about">
+                <p class="reveal about-me-text">
+                    Hello!<br>
+                     I'm a front-end developer with a minimalistic and modern design approach. I specialize in creating clean, user-friendly interfaces that prioritize usability and aesthetics.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
         <div class="container">
             <div class="header-wrapper">
                 <h1 class="reveal">
@@ -29,8 +44,8 @@
                         <img src="https://images.sexual.mom/i3jb5tokx7prb5p2lrtuwxjbr/d" alt="project image">
                     </a>
                     <div class="project-description">
-                        description<br>
-                        something more
+                        minimalistic bio page<br>
+                        modern style
                     </div>
                 </div>
                 <div class="reveal project">
@@ -39,39 +54,39 @@
                     </a>
                     <div class="project-description">
                         basic domain sale<br>
-                        placeholder
+                        page
                     </div>
                 </div>
-                <div class="reveal project">
-                    <a href="https://sexual.mom" class="project-image">
-                        <img src="https://images.sexual.mom/i3jb5tokx7prb5p2lrtuwxjbr/d" alt="project image">
-                    </a>
-                    <div class="project-description">
-                        description<br>
-                        something more
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="header-wrapper">
+                <h1 class="reveal">
+                    Contact
+                </h1>
+            </div>
+            <div class="text-wrapper">
+                <p class="contact-me-text">
+                    Feel free to reach out to me on any of these platforms
+                </p>
+            </div>
+            <div class="social-wrapper">
+                <div class="social-links">
+                    <div class="reveal social-link">
+                        <a class="github" href="https://github.com/sesjaphp" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="reveal social-link">
+                        <a class="telegram" href="https://t.me/xoraes" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="reveal social-link">
+                        <a class="discord" href="https://discord.com/users/1217093341251112973" target="_blank"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
-<script>
-    const observer = new IntersectionObserver(
-    (entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                // observer.unobserve(entry.target);
-            }
-            });
-        },
-        {
-            threshold: 0.15
-        }
-    );
-
-    document.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-    });
-</script>
+<script src="/html/js/reveal.js"></script>
 </html>
